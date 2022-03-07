@@ -28,6 +28,7 @@ body{
   width: 360px;
   height: 360px;
   border-radius: .5rem;
+  position: relative;
 }
 
 .text-card{
@@ -35,6 +36,7 @@ body{
 }
 .text-card h1:hover{
   color:cyan;
+  cursor: pointer;
 }
 .footer-name{
   padding-top: 1rem;
@@ -63,6 +65,7 @@ body{
 
 .footer-name p span:hover{
   color: cyan;
+  cursor: pointer;
 }
 .first-text{
   display: flex;
@@ -92,6 +95,7 @@ hr{
 
 h1{
   color: rgb(196, 194, 194);
+  padding-top: .5rem;
 }
 
 ul{
@@ -129,36 +133,36 @@ ul{
     margin: 1.25rem auto 0;
   }
 }
-.overlay{
-  transition: .5s ease;
-  opacity: 0;
+.main-container .image-card div{
+  background-color: hsl(178, 100%, 50%, 55%);
   position: absolute;
-  top: 30%;
+  top: 60;
+  width: 360px;
+  height: 360px;
+  z-index: inherit;
+  border-radius: .625rem;
+  opacity: 0;
+}
+
+.main-container .image-card div img{
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-  border-radius: 0.5rem;
 }
 
-.overlay-image{
-  background-color: hsl(178, 100%, 50%);
-  border-radius: 0.5rem;
-  height: 360px;
-  width: 360px;
-}
-
-.overlay-image:first-child{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main-container .image-card div:hover{
+  opacity: 1;
+  cursor: pointer;
 }
 
 
 .image-card:hover .main-image{
   opacity: 0.775;
+  cursor: pointer;
 }
 
 .image-card:hover .overlay{
   opacity: 0.6;
+  cursor: pointer;
 }
