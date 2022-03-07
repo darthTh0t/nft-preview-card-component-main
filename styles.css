@@ -22,6 +22,7 @@ body{
   background-color: hsl(216, 50%, 16%);
   padding: 1rem;
   border-radius: .625rem;
+  box-shadow: 10px 10px 20px hsl(216, 56%, 13%), -20px -20px 20px hsl(216, 56%, 13%);
 }
 
 .main-image{
