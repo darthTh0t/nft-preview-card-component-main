@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  max-width: 480px;
+  margin: 0 auto;
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  font-size: 18px;
+}
+.main-container{
+  max-width: 360px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1rem;
+  border-radius: .625rem;
+}
+
+.main-image{
+  width: 360px;
+  height: 360px;
+  border-radius: .5rem;
+}
+
+.text-card{
+  border-bottom: 1rem;
+}
+.text-card h1:hover{
+  color:cyan;
+}
+.footer-name{
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-content: center;
+  /* column-gap: 40px */
+}
+.footer-name img{
+  border-radius: 100%;
+  border: 1px solid whitesmoke;
+  width: 15%;
+  height: inherit;
+}
+.footer-name p{
+  padding-left: .625rem;
+  padding-top: .9rem;
+  color: hsl(215, 51%, 70%);;
+}
+
+.footer-name p span{
+  padding-left: 0;
+  color: white;
+}
+
+.footer-name p span:hover{
+  color: cyan;
+}
+.first-text{
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+  padding-top: .3rem;
+  padding-bottom: .5rem;
+}
+
+.second-text{
+  padding-top: .325rem;
+}
+
+span{
+  padding-left: 8rem;
+}
+
+hr{
+  width: 360px;
+  margin: auto;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: hsl(215, 32%, 27%);
+}
+
+h1{
+  color: rgb(196, 194, 194);
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: .845rem;
+}
+
+.second-text ul li img{
+  margin-right: .4rem;
+  /* width: 15%;
+  height: 15% */
+}
+
+.first-list{
+  color: #00FFF8;
+  font-weight: 600;
+}
+
+.second-list{
+  color: #8BACD9;
+  font-weight: 400;
+}
+
+.second-text ul li{
+  display: flex;
+  align-content: center;
+}
+
+@media (min-width: 480px){
+  .main-container{
+    width: 360px;
+    margin: 1.25rem auto 0;
+  }
+}
+.overlay{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.overlay-image{
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 0.5rem;
+  height: 360px;
+  width: 360px;
+}
+
+.overlay-image:first-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image-card:hover .main-image{
+  opacity: 0.775;
+}
+
+.image-card:hover .overlay{
+  opacity: 0.6;
+}
